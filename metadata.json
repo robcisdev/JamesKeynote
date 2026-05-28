@@ -1,0 +1,6 @@
+{
+  "name": "James the Just: Profile & Epistle Biography",
+  "description": "An elegant, scholarly landing page providing historical and pastoral insights into James, the brother of Jesus, and his deeply practical New Testament Epistle.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

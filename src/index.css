@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  /* Apple Inspired Neutrals */
+  --color-apple-gray: #F5F5F7;
+  --color-apple-dark: #1D1D1F;
+  --color-apple-darker: #0D0D0E;
+  --color-apple-accent: #3b82f6; /* Premium Blue */
+  --color-apple-orange: #ff6b00; /* Apple-style Vivid Orange text/accents */
+  --color-apple-rose: #f43f5e; /* Vibrant Rose focus points */
+  
+  /* Compat mappings for content sections */
+  --color-warm-beige: #F5F5F7;
+  --color-warm-parchment: #FFFFFF;
+  --color-warm-clay: #E5E5EA;
+  --color-ink-dark: #1D1D1F;
+  --color-ink-muted: #86868B;
+  --color-crimson: #ff6b00;
+  --color-crimson-light: #FFF5EE;
+  --color-ochre: #3b82f6;
+  --color-ochre-light: #EFF6FF;
+}
+
+body {
+  background-color: var(--color-apple-gray);
+  color: var(--color-apple-dark);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Stunning custom linear progress indicators */
+.apple-lens-glow {
+  position: relative;
+}
+.apple-lens-glow::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 120%, rgba(255, 107, 0, 0.15), transparent 60%);
+  pointer-events: none;
+}
+
+/* Elegant scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-apple-gray);
+}
+::-webkit-scrollbar-thumb {
+  background: #D2D2D7;
+  border-radius: 999px;
+  border: 2px solid var(--color-apple-gray);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #86868B;
+}
+
+/* Custom smooth transitions */
+.smooth-tilt {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
